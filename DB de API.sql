@@ -1,0 +1,7 @@
+USE master
+GO
+
+IF NOT EXISTS(SELECT name FROM master.dbo.sysdatabases WHERE NAME = 'API')
+BEGIN
+    CREATE DATABASE API
+END
